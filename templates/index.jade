@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/header
+
+block header
+    mixin header()
+
+block content
+    iframe(src='http://player.vimeo.com/video/71230986?0&autoplay=1&loop=1', width='768px', height='432px', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+
