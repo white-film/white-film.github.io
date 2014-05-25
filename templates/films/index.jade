@@ -13,3 +13,8 @@ block content
         | the issues that white film aims to address are color checking of art works, quality of informative content combined with an artistic and tasteful voice behind the camera. 
         | white film is founded and run out of new york city.
 
+
+
+    for file in files
+        .film
+            | #{autopages.getAsJSON(file).title}
