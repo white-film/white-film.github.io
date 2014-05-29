@@ -37,13 +37,9 @@ block content
                             | #{film.title}
                         p.ltwo 4.1.14 - 3:00
                         p.lthree
-                            | a closer look at jamie zigelbuam's interactive light installation 'pixel'
+                            | #{film.description}
 
 
-
-    for file in files
-        .film
-            | #{autopages.getAsJSON(file).title}
 
 
 
