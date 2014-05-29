@@ -6,12 +6,114 @@ block header
     mixin header()
 
 block content
-    p
-        | white film is an art world production company that produces high-quality videos.
-    p
-        | each film produced by white film will be specially fitted to the artist, gallery, institution, fair, or museum’s needs. 
-        | the issues that white film aims to address are color checking of art works, quality of informative content combined with an artistic and tasteful voice behind the camera. 
-        | white film is founded and run out of new york city.
+    #anavshell
+        #arcnav
+            ul
+              li
+                a.selected(href='#', data-filter='*') all
+              li
+                a(href='#', data-filter='.mue') museum
+              li
+                a(href='#', data-filter='.gar') gallery
+              li
+                a(href='#', data-filter='.ins') institution
+              li
+                a(href='#', data-filter='.art') artists
+              li
+                a(href='#', data-filter='.eve') events
+    .portfolio(style='min-height: 300px;')
+      article.entry.art
+        a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688')
+          img(src='images/pixel.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone pixel
+            p.ltwo 4.1.14 - 3:00
+            p.lthree
+              | a closer look at jamie zigelbuam's interactive light installation 'pixel'
+      article.entry.mue.eve
+        a(data-rel='prettyPhoto', href='https://vimeo.com/90662790&width=1000&height=688')
+          img(src='images/girls.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone girls against god magazine: wolf moon gathering, moma ps1
+            p.ltwo 3.28.14 - 2:00
+            p.lthree
+              | girls against god magazine celebrates the forces of the wild female soul. published by sophie morner of capricious, co-edited by bianca casady and anne sherwood pundyk
+      article.entry.gar.art
+        a(data-rel='prettyPhoto', href='https://vimeo.com/87337559&width=1000&height=688')
+          img(src='images/feb/matl.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone mickalene thomas
+            p.ltwo 2.23.14 - 3:00
+            p.lthree
+              | artspace editor andrew m. goldstein visits artist mickalene thomas in her brooklyn studio to discuss cubism and black femininity
+      article.entry.art
+        a(data-rel='prettyPhoto', href='http://vimeo.com/83983085&width=1000&height=688')
+          img(src='images/alexis.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone alexis dahan
+            p.ltwo 1.14.14 - :47
+            p.lthree a look at alexis dahan's new installation 'we serve selected texts'
+      article.entry.art
+        a(data-rel='prettyPhoto', href='http://vimeo.com/85118717&width=1000&height=688')
+          img(src='images/cleg.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone oliver clegg
+            p.ltwo 1.9.14 - :48
+            p.lthree the journey behind oliver clegg's burning of 'the end' sculpture 
+      article.entry.eve.ins.mue
+        a(data-rel='prettyPhoto', href='https://vimeo.com/79928192&width=1000&height=688')
+          img(src='images/nyhp.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone ny ny happy happy
+            p.ltwo 11.07.13 - :50
+            p.lthree
+              | a unique benefit gala hosted by artist ed fornieles for rhizome at the new museum
+      article.entry.art.ins
+        a(data-rel='prettyPhoto', href='https://vimeo.com/76502227&width=1000&height=688')
+          img(src='images/tribe.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone mark tribe
+            p.ltwo 10.12.13 - :59
+            p.lthree
+              | phillips and paddles on! curator lindsay howard visits artist mark tribe at his long island city studio and discuss his work 'black creek'
+      article.entry.art.ins
+        a(data-rel='prettyPhoto', href='https://vimeo.com/76498488&width=1000&height=688')
+          img(src='images/kate.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone kate steciw
+            p.ltwo 10.12.13 - 1:15
+            p.lthree
+              | phillips and paddles on! curator lindsay howard visit artist kate steciw at her greenpoint studio and discuss her work 'abstract, accent, active, blossom, color, competition, decal, decor...
+      article.entry.art.ins
+        a(data-rel='prettyPhoto', href='https://vimeo.com/76501452&width=1000&height=688')
+          img(src='images/zig.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone jamie zigelbaum
+            p.ltwo 10.12.13 - 1:19
+            p.lthree
+              | phillips and paddles on! curator lindsay howard visit artist jamie zigelbaum and his team at his brooklyn studio and discuss his work 'pixel'
+      article.entry.art
+        a(data-rel='prettyPhoto', href='http://vimeo.com/74949017&width=1000&height=688')
+          img(src='images/lor.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone lorenzo bueno
+            p.ltwo 9.19.13 - 4:50
+            p.lthree introducing lorenzo bueno and the 'collective unintentional composition'
+      article.entry.art
+        a(data-rel='prettyPhoto', href='https://vimeo.com/73499553&width=1000&height=688')
+          img(src='images/matl.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone mat larkin
+            p.ltwo 9.4.13 - 3:21
+            p.lthree introducing emerging brooklyn artist mat larkin
+      article.entry.ins
+        a(data-rel='prettyPhoto', href='https://vimeo.com/61073981&width=1000&height=688')
+          img(src='images/newnew.png', style='height: 135px; width: 225px;', alt='')
+          span.overlay
+            p.lone y&s 
+            p.ltwo 2.7.13 - 4:52
+            p.lthree a look into the young minds behind y&s 
+
 
 
 
@@ -19,3 +121,9 @@ block content
         .film
             | #{autopages.getAsJSON(file).title}
 
+
+
+block scripts
+    script(src='/js/lib/prettyphoto.js')
+    script(src='/js/lib/isotope.js')
+    script(src='/js/films.js')
