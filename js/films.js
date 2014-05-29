@@ -1,3 +1,11 @@
+jQuery(document).ready(function(){
+  jQuery('a[data-gal]').each(function() {
+      jQuery(this).attr('rel', jQuery(this).data('gal'));
+  });   
+  jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'dark_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
+
+
+
  $.Isotope.prototype._getCenteredMasonryColumns = function() {
     this.width = this.element.width();
     
@@ -91,3 +99,4 @@ var $container = $('.portfolio');
        $optionSet.find('.selected').removeClass('selected');
        $this.addClass('selected'); 
     });
+}); 
