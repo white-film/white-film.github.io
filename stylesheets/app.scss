@@ -78,6 +78,10 @@ div.rwell {
     padding-top: 25px;
 }
 
+.film-container {
+    max-width: 960px;
+}
+
 /*header*/
 #headershell {
     text-align:center;
@@ -201,7 +205,7 @@ div.rwell {
     float:left;
     margin:5px;
     cursor:pointer;
-    width:225px;
+    width:300px;
     height:135px;
     padding:0;
 }

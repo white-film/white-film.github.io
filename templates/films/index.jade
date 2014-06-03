@@ -8,36 +8,38 @@ block header
 block content
     - var films = files
 
+    .film-container
 
-    #anavshell
-        #arcnav
-            ul
-              li
-                a.selected(href='#', data-filter='*') all
-              li
-                a(href='#', data-filter='.mue') museum
-              li
-                a(href='#', data-filter='.gar') gallery
-              li
-                a(href='#', data-filter='.ins') institution
-              li
-                a(href='#', data-filter='.art') artists
-              li
-                a(href='#', data-filter='.eve') events
-    .portfolio(style='min-height: 300px;')
+        #anavshell
+            #arcnav
+                ul
+                  li
+                    a.selected(href='#', data-filter='*') all
+                  li
+                    a(href='#', data-filter='.mue') museum
+                  li
+                    a(href='#', data-filter='.gar') gallery
+                  li
+                    a(href='#', data-filter='.ins') institution
+                  li
+                    a(href='#', data-filter='.art') artists
+                  li
+                    a(href='#', data-filter='.eve') events
 
-        for film in films.reverse()
-            - film = autopages.getAsJSON(film)
+        .portfolio(style='min-height: 300px;')
 
-            article.entry.art
-                a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688')
-                    img(src='#{film.image}', style='height: 135px; width: 225px;', alt='')
-                    span.overlay
-                        p.lone
-                            | #{film.title}
-                        p.ltwo #{film.date} - #{film.duration}
-                        p.lthree
-                            | #{film.description}
+            for film in films.reverse()
+                - film = autopages.getAsJSON(film)
+
+                article.entry.art
+                    a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688')
+                        img(src='#{film.image}', style='height: 135px; width: 225px;', alt='')
+                        span.overlay
+                            p.lone
+                                | #{film.title}
+                            p.ltwo #{film.date} - #{film.duration}
+                            p.lthree
+                                | #{film.description}
 
 
 
