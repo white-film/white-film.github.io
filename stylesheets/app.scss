@@ -32,14 +32,18 @@
 
 .about,
 .inquiries {
-    max-width: 700px;
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 0.7em;
 }
 
 .about {
+    max-width: 700px;
     text-align: justify;
+}
+
+.inquiries {
+    text-align: center;
 }
 
 
