@@ -31,8 +31,8 @@ block content
             for film in films.reverse()
                 - film = autopages.getAsJSON(film)
 
-                article.entry.art
-                    a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688', style="background-image:url(#{film.image})")
+                article.entry.art(style="background-image:url(#{film.image})")
+                    a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688')
                         span.overlay
                             p.lone
                                 | #{film.title}
