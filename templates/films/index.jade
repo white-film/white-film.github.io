@@ -32,7 +32,7 @@ block content
                 - film = autopages.getAsJSON(film)
 
                 article(style="background-image:url(#{film.image})", class="entry #{film.class}")
-                    a(data-rel='prettyPhoto', href='https://vimeo.com/90662515&width=1000&height=688')
+                    a(data-rel='prettyPhoto', href='#{film.url}')
                         span.overlay
                             p.lone
                                 | #{film.title}
